@@ -1,3 +1,6 @@
+from .context import basics
+import os
+
 def part1(calories: list) -> int:
     return max(calories)
 
@@ -7,13 +10,8 @@ def part2(calories: list) -> int:
 
 
 def read_calories_from_file(fileName: str) -> list:
-    lines = read_file(fileName)
+    lines = basics.read_file(fileName)
     return sum_lines(lines)
-
-
-def read_file(fileName: str) -> list:
-    with open(fileName, 'r') as file:
-        return [line.strip() for line in file]
 
 
 def sum_lines(lines: list) -> list:
@@ -32,7 +30,9 @@ def sum_lines(lines: list) -> list:
     return result
 
 
-if __name__ == '__main__':
+def RunDay():
+    basics.ensure_directory(os.path.dirname(__file__))
+    print('Day01')
     calories = read_calories_from_file('input')
     print('Part1: '+str(part1(calories)))
     print('Part2: '+str(part2(calories)))
