@@ -63,7 +63,7 @@ def read_guide(file_name: str) -> int:
     return sum([calulate_line_guide(line) for line in helpers.read_file(file_name)])
 
 
-def RunDay():
+def run_day():
     helpers.ensure_directory(os.path.dirname(__file__))
     print('Day02')
     print('guested score: ' + str(calculate_score('input')))
@@ -71,4 +71,4 @@ def RunDay():
 
 
 if __name__ == '__main__':
-    RunDay()
+    run_day()

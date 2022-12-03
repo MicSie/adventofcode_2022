@@ -1,8 +1,8 @@
 import os
 
 
-def read_file(fileName: str) -> list:
-    with open(fileName, 'r') as file:
+def read_file(file_name: str) -> list:
+    with open(file_name, 'r') as file:
         return [line.strip() for line in file]
 
 

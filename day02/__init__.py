@@ -1,1 +1,1 @@
-from .task import RunDay
+from .task import run_day

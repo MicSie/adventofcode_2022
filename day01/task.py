@@ -30,7 +30,7 @@ def sum_lines(lines: list) -> list:
     return result
 
 
-def RunDay():
+def run_day():
     basics.ensure_directory(os.path.dirname(__file__))
     print('Day01')
     calories = read_calories_from_file('input')
