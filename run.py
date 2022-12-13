@@ -8,6 +8,7 @@ import day07
 import day08
 import day09
 import day10
+import day11
 
 day01.run_day()
 
@@ -37,3 +38,6 @@ day09.run_day()
 
 print()
 day10.run_day()
+
+print()
+day11.run_day()
