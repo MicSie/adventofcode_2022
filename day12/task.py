@@ -113,7 +113,7 @@ class GridHolder():
             return
 
         for neighbor in self._get_neighbors(self.current_cell):
-            # d(current,neighbor) is the weight of the edge from current to neighbor => here 1
+            # d(current,neighbor) is the weight (here distance) of the edge from current to neighbor
             # tentative_gScore is the distance from start to the neighbor through current
             tentative_g_score = self.current_cell.g_score + \
                 neighbor.distance_to_cell(self.current_cell)
