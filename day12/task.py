@@ -144,7 +144,7 @@ class GridHolder():
                 continue
 
             neighbor = self.grid[y][x]
-            if neighbor.height - cell.height <= 1 or neighbor.is_end:
+            if neighbor.height - cell.height <= 1:
                 neighbors.append(neighbor)
 
         return neighbors
@@ -177,7 +177,7 @@ class GridHolder():
 
 def run_day():
     print('Day12')
-    grid_holder = GridHolder('input')
+    grid_holder = GridHolder('input.txt')
     grid_holder.find_path()
     print('steps: ' + str(grid_holder.steps))
     grid_holder.find_shortest_path()

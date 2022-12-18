@@ -125,6 +125,6 @@ def _count_visible_trees_from_position(start: tuple[int], next: tuple[int], tree
 
 def run_day():
     print('Day08')
-    trees = parse_file('input')
+    trees = parse_file('input.txt')
     print('visible trees: ' + str(count_trees(trees)))
     print('max scenic score: ' + str(get_max_scenic_score(trees)))

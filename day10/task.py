@@ -54,7 +54,7 @@ def _calculate_sprite(position:int) -> str:
 
 def run_day():
     print('Day10')
-    history = parse_file('input')
+    history = parse_file('input.txt')
     print("signal strength: " + str(calulate_strength(history)))
     print("screen:")
     print()

@@ -24,7 +24,7 @@ class Test_Day04(unittest.TestCase):
     def test_count_fully_contained_assignments(self):
         helpers.ensure_directory('day04')
         self.assertEqual(
-            task.count_fully_contained_assignments('testinput'), 2)
+            task.count_fully_contained_assignments('testinput.txt'), 2)
 
     def test_overlaps(self):
         self.assertFalse(task.overlaps(TEST_DATA[0]))
@@ -37,7 +37,7 @@ class Test_Day04(unittest.TestCase):
     def test_count_overlaping_assignments(self):
         helpers.ensure_directory('day04')
         self.assertEqual(
-            task.count_overlaping_assignments('testinput'), 4)
+            task.count_overlaping_assignments('testinput.txt'), 4)
 
 if __name__ == '__main__':
     unittest.main()

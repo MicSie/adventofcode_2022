@@ -168,7 +168,7 @@ def read_list(instructions: list[str], directory: 'Directory') -> None:
 
 def run_day():
     helpers.ensure_directory(os.path.dirname(__file__))
-    filesystem = Filesystem('input')
+    filesystem = Filesystem('input.txt')
     print('Day07')
     print('directories with a total size of at most 100000: ' +
           str(sum_smallest_directories(filesystem, 100000)))

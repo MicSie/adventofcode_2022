@@ -17,7 +17,7 @@ class Test_day10(unittest.TestCase):
         self.assertEqual(history[5],-1) # addx -5
 
     def test_parse_file(self):
-        history = task.parse_file('testinput')
+        history = task.parse_file('testinput.txt')
         
         self.assertEqual(history[20-1], 21)
         self.assertEqual(history[60-1], 19)
@@ -29,7 +29,7 @@ class Test_day10(unittest.TestCase):
         self.assertEqual(task.calulate_strength(history), 13140)
 
     def test_screen(self):
-        history = task.parse_file('testinput')
+        history = task.parse_file('testinput.txt')
         screen = task.calculate_screen(history)
 
         self.assertEqual(screen[0], '##..##..##..##..##..##..##..##..##..##..')

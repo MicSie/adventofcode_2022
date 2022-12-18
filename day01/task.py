@@ -33,6 +33,6 @@ def sum_lines(lines: list) -> list:
 def run_day():
     basics.ensure_directory(os.path.dirname(__file__))
     print('Day01')
-    calories = read_calories_from_file('input')
+    calories = read_calories_from_file('input.txt')
     print('Part1: '+str(part1(calories)))
     print('Part2: '+str(part2(calories)))

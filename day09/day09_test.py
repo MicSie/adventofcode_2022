@@ -49,18 +49,18 @@ class Test_day09(unittest.TestCase):
 
     def test_position_counter(self):
         head = task.Head()
-        head.read_file('testinput')
+        head.read_file('testinput.txt')
 
         self.assertEqual(len(head.tail.history), 13)
 
     def test_position_counter(self):
         head = task.Head()
-        head.read_file('testinput')
+        head.read_file('testinput.txt')
         self.assertEqual(len(head.get_last_tail().history), 1)
 
     def test_position_counter_new(self):
         head = task.Head()
-        head.read_file('testinput2')
+        head.read_file('testinput2.txt')
         self.assertEqual(len(head.get_last_tail().history), 36)
 
 

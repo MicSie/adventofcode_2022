@@ -89,6 +89,6 @@ def read_file(file_name: str):
 
 def run_day():
     print('Day13')
-    pairs = read_file('input')
+    pairs = read_file('input.txt')
     print(f'sum of the indices: {sum_indices(pairs)}')
     print(f'decoder key: {calculate_decoder_key(pairs)}')

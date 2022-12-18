@@ -46,6 +46,6 @@ def run_day():
     helpers.ensure_directory(os.path.dirname(__file__))
     print('Day04')
     print('fully contained assignments: ' +
-          str(count_fully_contained_assignments('input')))
+          str(count_fully_contained_assignments('input.txt')))
     print('overlaping assignments: ' +
-          str(count_overlaping_assignments('input')))
+          str(count_overlaping_assignments('input.txt')))

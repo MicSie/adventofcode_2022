@@ -38,7 +38,7 @@ class Test_Day02(unittest.TestCase):
 
     def test_read_score(self):
         helpers.ensure_directory('day02')
-        self.assertEqual(task.calculate_score('testinput'), 15)
+        self.assertEqual(task.calculate_score('testinput.txt'), 15)
 
     def test_get_value_updated(self):
         self.test_get_value()
@@ -48,7 +48,7 @@ class Test_Day02(unittest.TestCase):
 
     def test_read_guide(self):
         helpers.ensure_directory('day02')
-        self.assertEqual(task.read_guide('testinput'), 12)
+        self.assertEqual(task.read_guide('testinput.txt'), 12)
 
 
 if __name__ == '__main__':

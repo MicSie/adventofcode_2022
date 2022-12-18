@@ -35,5 +35,5 @@ def read_group_priority(file_name: str) -> int:
 def run_day():
     helpers.ensure_directory(os.path.dirname(__file__))
     print('Day03')
-    print('priorities: ' + str(read_priority('input')))
-    print('group priorities: ' + str(read_group_priority('input')))
+    print('priorities: ' + str(read_priority('input.txt')))
+    print('group priorities: ' + str(read_group_priority('input.txt')))

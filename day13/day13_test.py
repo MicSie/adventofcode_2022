@@ -16,7 +16,7 @@ class Test_day13(unittest.TestCase):
         self.assertEqual(task.parse_line('[[[]]]'), [[[]]])
 
     def test_compare_pair(self):
-        pairs = task.read_file('testinput')
+        pairs = task.read_file('testinput.txt')
         self.assertEqual(len(pairs), 8)
 
         self.assertTrue(task.is_in_order(pairs[0]))
@@ -29,7 +29,7 @@ class Test_day13(unittest.TestCase):
         self.assertFalse(task.is_in_order(pairs[7]))
 
     def test_sum_indices(self):
-        pairs = task.read_file('testinput')
+        pairs = task.read_file('testinput.txt')
         self.assertEqual(task.sum_indices(pairs), 13)
 
     def test_insert_divider_packets_and_redorder(self):
@@ -52,13 +52,13 @@ class Test_day13(unittest.TestCase):
                           [[8, 7, 6]],
                           [9]]
 
-        pairs = task.read_file('testinput')
+        pairs = task.read_file('testinput.txt')
         ordered_list = task.insert_divider_packets_and_redorder(pairs)
 
         self.assertEqual(ordered_list, expected_order)
 
     def test_calculate_decoder_key(self):
-        pairs = task.read_file('testinput')
+        pairs = task.read_file('testinput.txt')
         self.assertEqual(task.calculate_decoder_key(pairs), 140)
 
 

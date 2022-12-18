@@ -66,8 +66,8 @@ def read_guide(file_name: str) -> int:
 def run_day():
     helpers.ensure_directory(os.path.dirname(__file__))
     print('Day02')
-    print('guested score: ' + str(calculate_score('input')))
-    print('guide score: ' + str(read_guide('input')))
+    print('guested score: ' + str(calculate_score('input.txt')))
+    print('guide score: ' + str(read_guide('input.txt')))
 
 
 if __name__ == '__main__':

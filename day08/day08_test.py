@@ -6,7 +6,7 @@ from .context import basics as helpers
 
 class Test_day08(unittest.TestCase):
     def test_pasing_input(self):
-        self.assertEqual(task.parse_file('testinput'),
+        self.assertEqual(task.parse_file('testinput.txt'),
                          [[3, 0, 3, 7, 3],
                           [2, 5, 5, 1, 2],
                           [6, 5, 3, 3, 2],
@@ -14,7 +14,7 @@ class Test_day08(unittest.TestCase):
                           [3, 5, 3, 9, 0]])
 
     def test_count_tree_lines(self):
-        trees = task.parse_file('testinput')
+        trees = task.parse_file('testinput.txt')
         result = task.calculate_visibility(trees)
         expected = [[[task.LEFT, task.TOP], [task.TOP], [task.TOP], [task.LEFT, task.TOP, task.RIGHT], [task.TOP, task.RIGHT]],
                     [[task.LEFT], [task.LEFT, task.TOP], [
@@ -29,16 +29,16 @@ class Test_day08(unittest.TestCase):
             self.assertEqual(result[index], expected[index])
 
     def test_count_trees(self):
-        trees = task.parse_file('testinput')
+        trees = task.parse_file('testinput.txt')
         self.assertEqual(task.count_trees(trees), 21)
 
     def test_get_scenic_score(self):
-        trees = task.parse_file('testinput')
+        trees = task.parse_file('testinput.txt')
         self.assertEqual(task.get_scenic_score(trees, 1, 2), 4)
         self.assertEqual(task.get_scenic_score(trees, 3, 2), 8)
 
     def test_get_max_scenic_score(self):
-        trees = task.parse_file('testinput')
+        trees = task.parse_file('testinput.txt')
         self.assertEqual(task.get_max_scenic_score(trees), 8)
 
 

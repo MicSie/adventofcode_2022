@@ -86,5 +86,5 @@ def run_createmover9001(file_name: str) -> str:
 def run_day():
     helpers.ensure_directory(os.path.dirname(__file__))
     print('Day05')
-    print('CrateMover9000: ' + str(run_createmover9000('input')))
-    print('CrateMover9001: ' + str(run_createmover9001('input')))
+    print('CrateMover9000: ' + str(run_createmover9000('input.txt')))
+    print('CrateMover9001: ' + str(run_createmover9001('input.txt')))

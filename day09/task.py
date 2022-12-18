@@ -73,6 +73,6 @@ class Tail():
 def run_day():
     print('Day09')
     head = Head()
-    head.read_file('input')
+    head.read_file('input.txt')
     print('step couter: ' + str(len(head.tail.history)))
     print('step couter 9th knot: ' + str(len(head.get_last_tail().history)))

@@ -14,7 +14,7 @@ def find_marker(data_line:str, unique_chars:int) -> int:
 
 def run_day():
     helpers.ensure_directory(os.path.dirname(__file__))
-    message = helpers.read_file('input')[0]
+    message = helpers.read_file('input.txt')[0]
     print('Day06')
     print('data marker: ', find_marker(message, 4))
     print('message marker: ', find_marker(message, 14))

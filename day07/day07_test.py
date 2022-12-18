@@ -132,11 +132,11 @@ class Test_day07(unittest.TestCase):
 
     def test_sum_smallest_directories(self):
         helpers.ensure_directory(os.path.dirname(__file__))
-        self.assertEqual(task.sum_smallest_directories(task.Filesystem('testinput'), 100000), 95437)
+        self.assertEqual(task.sum_smallest_directories(task.Filesystem('testinput.txt'), 100000), 95437)
 
     def test_directory_to_delete(self):
         helpers.ensure_directory(os.path.dirname(__file__))
-        self.assertEqual(task.directory_size_to_delete(task.Filesystem('testinput')), 24933642)
+        self.assertEqual(task.directory_size_to_delete(task.Filesystem('testinput.txt')), 24933642)
 
 if __name__ == '__main__':
     unittest.main()

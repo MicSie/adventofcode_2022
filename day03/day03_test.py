@@ -29,16 +29,16 @@ class Test_Day03(unittest.TestCase):
 
     def test_read_priority(self):
         helpers.ensure_directory('day03')
-        self.assertEqual(task.read_priority('testinput'), 157)
+        self.assertEqual(task.read_priority('testinput.txt'), 157)
 
     def test_find_group_items(self):
         helpers.ensure_directory('day03')
         self.assertEqual(task.find_group_items(
-            helpers.read_file('testinput')), ['r', 'Z'])
+            helpers.read_file('testinput.txt')), ['r', 'Z'])
 
     def test_read_group_priority(self):
         helpers.ensure_directory('day03')
-        self.assertEqual(task.read_group_priority('testinput'), 70)
+        self.assertEqual(task.read_group_priority('testinput.txt'), 70)
 
 
 if __name__ == '__main__':

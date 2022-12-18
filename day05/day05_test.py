@@ -8,7 +8,7 @@ class Test_Day05(unittest.TestCase):
     def _get_test_crates_and_instrucionts(self):
         helpers.ensure_directory(os.path.dirname(__file__))
         return task.split_crates_and_instructions(
-            helpers.read_file('testinput', False))
+            helpers.read_file('testinput.txt', False))
 
     def test_read_input(self):
         helpers.ensure_directory(os.path.dirname(__file__))
@@ -99,11 +99,11 @@ class Test_Day05(unittest.TestCase):
 
     def test_cratemover9000(self):
         helpers.ensure_directory(os.path.dirname(__file__))
-        self.assertEqual(task.run_createmover9000('testinput'), 'CMZ')
+        self.assertEqual(task.run_createmover9000('testinput.txt'), 'CMZ')
 
     def test_cratemover9001(self):
         helpers.ensure_directory(os.path.dirname(__file__))
-        self.assertEqual(task.run_createmover9001('testinput'), 'MCD')
+        self.assertEqual(task.run_createmover9001('testinput.txt'), 'MCD')
 
 
 if __name__ == '__main__':
