@@ -1,8 +1,6 @@
 
-from datetime import datetime
 import math
 import os
-import sys
 from .context import basics as helpers
 
 NEXT_POSITIONS = [
@@ -13,7 +11,7 @@ NEXT_POSITIONS = [
 
 
 class Cell:
-    def __init__(self, is_wall = False) -> None:
+    def __init__(self, is_wall=False) -> None:
         self.is_sand = False
         self.is_wall = is_wall
         self.is_start = False
