@@ -1,5 +1,5 @@
 from datetime import datetime
-import multiprocessing as mp
+import multiprocessing
 import os
 import re
 from .context import basics as helpers
@@ -15,8 +15,8 @@ class GridHolder:
         arguments = [(min_index, max_index, row_index)
                      for row_index in range(min_index, max_index+1)]
 
-        with mp.Pool(mp.cpu_count()) as pool:
-            for chunk in self._chunks(arguments, mp.cpu_count()):
+        with multiprocessing.Pool(multiprocessing.cpu_count()) as pool:
+            for chunk in self._chunks(arguments, multiprocessing.cpu_count()):
                 for result in pool.map(self._find_tuning_frequency_for_row, chunk):
                     if result != None:
                         return result

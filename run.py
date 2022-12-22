@@ -13,6 +13,7 @@ import day12
 import day13
 import day14
 import day15
+import day16
 
 SKIP_LONGRUNNER = True
 
@@ -62,3 +63,8 @@ if SKIP_LONGRUNNER:
     print('skipping day 15')
 else:
     day15.run_day()
+
+if SKIP_LONGRUNNER:
+    print('skipping day 16')
+else:
+    day16.run_day()
